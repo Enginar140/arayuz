@@ -1,0 +1,93 @@
+/* Dashboard genel düzeni */
+.dashboard-container {
+  display: flex;
+  flex-direction: column; /* Menü ve içerikler alt alta gelsin */
+  height: 100vh;
+  padding: 10px;
+  background-color: #f4f4f4;
+}
+
+/* Navigation bar (menü) stili */
+.nav-bar {
+  display: grid; /* Grid kullanarak 4 eşit alan yapıyoruz */
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 eşit kolon */
+  justify-items: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  font-size: 1.5rem;
+  width: 100%;
+}
+
+.nav-button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.nav-button:hover {
+  background-color: #777;
+}
+
+/* Kontrol ekranı (Görseldeki gibi düzen) */
+.control-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* 3:1 oranında iki kolon */
+  grid-template-rows: 2fr 1fr 1fr; /* Durum ve simülasyon daha uzun, butonlar ve log daha kısa */
+  gap: 20px;
+  flex: 1;
+  padding: 20px;
+}
+
+.status-screen,
+.simulation-screen {
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.buttons-panel,
+.log-panel {
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.start-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* İletişim ekranı */
+.communication-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex: 1;
+  padding: 10px;
+}
+
+.camera-view {
+  flex: 2;
+  background-color: #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.telemetry-view {
+  flex: 1;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 8px;
+  height: 100%;
+}
